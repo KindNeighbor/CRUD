@@ -3,7 +3,6 @@ package crud.example.crud.controller;
 import crud.example.crud.entity.CrudEntity;
 import crud.example.crud.repository.CrudEntityRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
