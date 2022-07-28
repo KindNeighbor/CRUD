@@ -4,11 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Builder
 @ToString
@@ -17,9 +15,7 @@ import javax.persistence.Id;
 @Entity(name = "sample_member")
 public class CrudEntity {
 
-    @Id @GeneratedValue
-    private Long id;
-
+    @Id
     @Column(nullable = false, unique = true)
     private String name;
 
